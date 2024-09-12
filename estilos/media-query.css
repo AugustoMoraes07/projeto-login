@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        background-image: linear-gradient(to top, #ef9477, #9a6472);
+    }
+
+    section#login{
+        width: 80vw;
+    }
+
+    section#login > div#foto{
+        float: left;
+        width: 30%;
+        height: 100%;
+        background-image: url(../imagens/tablet.jpg);
+        background-position: center bottom;
+        
+    }
+
+    section#login > div#form{
+        float: right;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body{
+        background-image: linear-gradient(to top, #ef9477, #9a6472);
+    }
+
+    section#login{
+        width: 950px;
+    }
+
+    section#login > div#foto{
+        float: left;
+        width: 50%;
+        height: 100%;
+
+        background-image: url(../imagens/desktop.jpg);
+        background-position: right center;
+    }
+
+    section#login > div#form{
+        float: right;
+        width: 50%;
+    }
+    
+}
