@@ -8,11 +8,12 @@
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
     body{
-        background-image: linear-gradient(to top, #ef9477, #9a6472);
+        background-image: linear-gradient(to top, #bbbbbb, #2C2657);
     }
 
     section#login{
         width: 80vw;
+        height: 300px;
     }
 
     section#login > div#foto{
@@ -32,23 +33,24 @@
 
 @media screen and (min-width: 992px) {
     body{
-        background-image: linear-gradient(to top, #ef9477, #9a6472);
+        background-image: linear-gradient(to top, #bbbbbb, #2C2657);
     }
 
     section#login{
         width: 955px;
+        height: 350px;
     }
 
-    section#login > div#foto{
+    div#foto{
         float: right;
         width: 50%;
         height: 100%;
 
         background-image: url(../imagens/desktop.jpg);
-        background-position: right center;
+        background-position: top center;
     }
 
-    section#login > div#form{
+    div#form{
         float: left;
         width: 50%;
     }
@@ -58,8 +60,9 @@
     }
 
 
-    section#login>div#form>p{
-        font-size: 1.2em;
+    div#form>p{
+        font-size: 1em;
+        margin: 20px 0px;
     }
     
 }

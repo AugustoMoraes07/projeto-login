@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 /* Paleta de Cores
-   Rosa Escuro - #9a6472
-   Laranja Avermelhado - #ef9477
-   Cinza - #a0a0a0 */
+   Azul Escuro - #2C2657
+   Bege - #D6B897
+   Branco - #F2F2F2 */
     
 *{  padding: 0px;
     margin: 0px;
@@ -17,7 +17,7 @@ html, body{
 }
 
 body{
-    background-color: #ef9477;
+    background-color: #bbbbbb;
 }
 
 main{
@@ -31,14 +31,14 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    height: 500px;
-    width: 300px;
-    transform: translate(-50%, -50%);
+    height: 475px;
+    width: 270px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.445);
     overflow: hidden;
-
+    
+    transform: translate(-50%, -50%);
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
 
@@ -46,7 +46,7 @@ section#login{
 
 div#foto{
     background-image: url(../imagens/phone.jpg);
-    background-color: #ef9477;
+    background-color: #D6B897;
     background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -73,14 +73,36 @@ div#form > p{
 
 div.campo{
     display: block;
+    padding: 4px 0px;
     margin: 5px 0px;
     width: 100%;
     height: 40px;
-    background-color: #ef9477;
+    background-color: #2C2657;
     border-radius: 5px;
-    text-align: center;
-    
 }
+
+div.campo i{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    height: 100%;
+}
+
+div.campo input{
+    height: 100%;
+    width: calc(100% - 45px);
+    padding: 18px;
+    background-color: #F2F2F2;
+    border: 2px solid #2C2657;
+    border-radius: 5px;
+
+    transform: translateY(-10px);
+}
+
+div.campo input:focus-within{
+    background-color: white;
+}
+
 div.campo label{
     display: none;
 }
@@ -91,7 +113,7 @@ div#form input[type=submit]{
     margin: 10px 0px;
     width: 100%;
     height: 40px;
-    background-color: #9a6472;
+    background-color: #2C2657;
     color: white;
     border: 0px;
     border-radius: 5px;
@@ -99,7 +121,7 @@ div#form input[type=submit]{
 }
 
 div#form input[type=submit]:hover{
-    background-color: #c58092;
+    background-color: #3e357e;
 }
 
 a.botao{
@@ -108,9 +130,9 @@ a.botao{
     padding: 5px;
     width: 100%;
     height: 40px;
-    background-color: white;
-    color: #9a6472;
-    border: 1px solid #9a6472;
+    background-color: #F2F2F2;
+    color: #2C2657;
+    border: 1px solid #2C2657;
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
@@ -118,11 +140,11 @@ a.botao{
 }
 
 a.botao:hover{
-    background-color: #c47c8f;
+    background-color: #2C2657;
     color: white;
     border: 0px;
 }
 
 a.botao>i{
     font-size: 0.8em;
-}
+    width: 30px;}
