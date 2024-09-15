@@ -32,19 +32,19 @@ section#login{
     top: 50%;
     left: 50%;
     height: 500px;
-    width: 250px;
+    width: 300px;
     transform: translate(-50%, -50%);
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.445);
     overflow: hidden;
 
-    transition: width 0.3s, eight 0.3s;
+    transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
 
 }
 
-section>div#foto{
+section#login>div#foto{
     background-image: url(../imagens/phone.jpg);
     background-color: #ef9477;
     background-position: center right;
@@ -54,13 +54,13 @@ section>div#foto{
     display: block;
 }
 
-section>div#form{
+section#login>div#form{
     display: block;
     padding: 10px;
-
-}
-section div#form > h1{
-    
     text-align: center;
 
+}
+section#login>div#form > p{
+    font-size: 0.8em;
+    
 }
